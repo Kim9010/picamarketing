@@ -437,7 +437,7 @@
         /* 콘텐츠 갤러리 */
         .content-gallery {
             padding: 100px 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #fafafa 0%, #fffef9 100%);
         }
 
         .gallery-container {
@@ -448,7 +448,7 @@
         }
 
         .gallery-container h2 {
-            color: white;
+            color: rgb(39, 39, 39);
             font-size: 2.5em;
             margin-bottom: 60px;
         }
@@ -470,7 +470,7 @@
             align-items: center;
             justify-content: center;
             font-size: 1.2em;
-            color: white;
+            color: rgb(39, 39, 39);
             cursor: pointer;
             transition: all 0.3s ease;
             position: relative;
@@ -503,7 +503,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
+            color: rgb(39, 39, 39);
             cursor: pointer;
             transition: all 0.3s ease;
             position: relative;
@@ -527,7 +527,7 @@
         }
 
         .testimonials-section h3 {
-            color: white;
+            color: rgb(39, 39, 39);
             margin-bottom: 30px;
             font-size: 1.8em;
         }
@@ -559,7 +559,7 @@
         }
 
         .testimonial-item p {
-            color: white;
+            color: rgb(39, 39, 39);
             font-size: 0.9em;
             line-height: 1.4;
         }
@@ -666,7 +666,7 @@
 
         .main-notice {
             background: linear-gradient(45deg, #ff6b35, #f7931e);
-            color: white;
+            color: rgb(231, 230, 230);
             border-radius: 20px;
             padding: 40px;
             text-align: left;
@@ -735,8 +735,8 @@
         /* 도입문의 */
         .contact {
             padding: 100px 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            background: linear-gradient(135deg, #ffffff 0%, #f3eddb 100%);
+            color: rgb(39, 39, 39);
         }
 
         .contact-container {
@@ -798,10 +798,26 @@
             margin-bottom: 10px;
         }
 
+        .contact-option-link {
+    text-decoration: none; /* 밑줄 제거 */
+    color: inherit; /* 부모 요소의 색상 상속 (파란색 제거) */
+    display: block;
+}
+
+/* 호버 상태에서도 밑줄 없애기 */
+.contact-option-link:hover {
+    text-decoration: none;
+}
+
+/* 방문한 링크도 색상 유지 */
+.contact-option-link:visited {
+    color: inherit;
+}
+
         /* 푸터 */
         footer {
-            background: #333;
-            color: white;
+            background: #ffffff;
+            color: rgb(255, 255, 255);
             padding: 50px 0 30px;
         }
 
@@ -826,7 +842,7 @@
 
         .footer-info p {
             margin-bottom: 10px;
-            color: #ccc;
+            color: rgb(39, 39, 39);
         }
 
         .footer-links {
@@ -837,7 +853,7 @@
         }
 
         .footer-links a {
-            color: #ccc;
+            color: #363636;
             text-decoration: none;
             transition: color 0.3s ease;
         }
@@ -859,7 +875,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
+            color: rgb(39, 39, 39);
             text-decoration: none;
             transition: all 0.3s ease;
         }
@@ -1334,12 +1350,14 @@
                         <p>전문 상담원이 설치부터 사용법까지 안내</p>
                     </div>
                 </a>
-                
+  
+                <a href="https://www.pcbang.com/_support/telReserve.jsp" class="contact-option-link">
                 <div class="contact-option">
                     <h3>상담시간 외 접수 가능<br>전화상담예약</h3>
                     <p>원하는 시간에 전화 상담을 예약하세요</p>
                 </div>
-                
+            </a>
+
                 <div class="contact-option">
                     <h3>전문 상담원의 원격 지원<br>원격 A/S</h3>
                     <p>실시간 원격 지원으로 문제를 해결</p>
